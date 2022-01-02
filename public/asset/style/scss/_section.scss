@@ -1,0 +1,123 @@
+﻿/*--------------------------------------------------
+
+                            섹션
+
+--------------------------------------------------*/
+//버튼
+.button {
+
+    @extend %tdn;
+    display: inline-flex;
+    letter-spacing: 1px;
+    border: 1px solid $white;
+    padding: $ratio_small $ratio_smaller;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: $ratio_small;
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        color: $white;
+    }
+
+    &.primary {
+        color: $green_w;
+        border-color: $green_w;
+        &:hover {
+            color: $green_w;
+        }
+    }
+}
+
+//폼컨트롤
+.form_control {
+    //width: 100%;
+    background-color: $white;
+    color: $black;
+    padding: $ratio_small $ratio_smaller;
+    border-radius: 8px;
+    border: 0;
+    font-size: $ratio_small;
+}
+
+//폼필드셋
+.form_fieldset {
+    @include flex_column($ratio_bigger);
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+//폼랩
+.form_wrap {
+    @extend %f_a_c;
+    @extend %f_j_sb;
+    flex: 0 0 100%;
+}
+
+//폼레전드
+.form_legend {
+    font-size: $ratio_bigger;
+    margin-bottom: $ratio_bigger;
+}
+
+//뱃지
+.badge {
+    display: flex;
+    align-items: center;
+    font-size: $ratio_smaller;
+    border: 1px solid $white;
+    padding: 8px $ratio_smaller;
+    margin-left: $ratio_smaller;
+    border-radius: 8px;
+    
+    &.female {
+        border-color: #ff80cd;
+        color: #ff80cd;
+    }
+    &.male {
+        border-color: #80beff;
+        color: #80beff;
+    }
+}
+
+//마이카드
+.mycard {
+    display: flex;
+    justify-content: stretch;
+    column-gap: $ratio_big;
+}
+.mycard_front {
+    flex-grow: 0.5;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dotted rgba(255, 255, 255, 0.5);
+    margin-top: $ratio_d1;
+    padding-top: $ratio_bigger;
+}
+
+//카드라이브
+.card_live {
+    @include flex_column($ratio_regular);
+    align-items: center;
+    a {
+        text-decoration: none;
+    }
+    &_wrap {
+    }
+    &_list {
+        row-gap: $ratio_regular;
+        img {
+            vertical-align: middle;
+            margin-right: $ratio_smaller;
+        }
+    }
+    &_title {
+        display: flex;
+    }
+}

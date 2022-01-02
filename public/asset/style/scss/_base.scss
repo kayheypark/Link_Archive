@@ -1,0 +1,29 @@
+﻿/*--------------------------------------------------
+
+                            베이스
+
+--------------------------------------------------*/
+
+form {
+    width: 100%;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+ul,ol,dl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $green_w;
+    background: $green;
+}
+  
+::selection {
+    color: $green_w;
+    background: $green;
+}

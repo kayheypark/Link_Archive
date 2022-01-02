@@ -1,0 +1,100 @@
+﻿/*--------------------------------------------------
+
+                            레이아웃
+
+--------------------------------------------------*/
+
+body {
+    background-color: #2a2d3c;
+    color: $white;
+}
+
+.header {
+    
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $ratio_d1;
+        padding-bottom: 0;
+    }
+    &_skyinfo_wrap {
+        @extend %f_j_sb;
+        @extend %f_a_c;
+        column-gap: 12px;
+    }
+    &_search_wrap {
+        @extend %f_j_sb;
+        @extend %f_a_c;
+        column-gap: 12px;
+        input {
+            width: 300px;
+        }
+    }
+}
+
+.middle_area {
+    //min-height: 100vh;
+    display: flex;
+    justify-content: stretch;
+    margin: $ratio_d1;
+    column-gap: $ratio_d1;
+}
+
+.sidebar {
+
+    background-color: rgba($color: $white, $alpha: 0.1);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 220px;
+    padding: $ratio_regular 0;
+
+    border-radius: 8px;
+
+    a {
+        @extend %tdn;
+    }
+
+    &_list {
+        row-gap: 10px;
+    }
+    &_item {
+        &_a {
+            @include transition(all);
+            display: block;
+            width: 100%;
+            padding: $ratio_regular;
+            padding-left: $ratio_bigger;
+            
+            &:hover,&.active {
+                margin-left: $ratio_smaller;
+                color: #5cff69;
+            }
+        }
+    }
+}
+
+.main {
+    flex-grow: 12;
+}
+
+.footer {
+    @include flex_column($ratio_d1);
+    padding: $ratio_d1;
+    background-color: #252732;
+    &_top {
+        @extend %f;
+        column-gap: $ratio_d2;
+    }
+    &_info {
+        @include flex_column($ratio_regular);
+        font-size: $ratio_small;
+        &_title {
+            @extend %m_0;
+            font-weight: 700;
+        }
+    }
+    &_copy {
+        margin-bottom: 0;
+    }
+}
