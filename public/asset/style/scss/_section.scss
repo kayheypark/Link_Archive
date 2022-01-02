@@ -54,6 +54,7 @@
 .form_wrap {
     @extend %f_a_c;
     @extend %f_j_sb;
+    column-gap: $ratio_d1;
     flex: 0 0 100%;
 }
 
@@ -83,19 +84,10 @@
     }
 }
 
-//마이카드
-.mycard {
-    display: flex;
-    justify-content: stretch;
-    column-gap: $ratio_big;
-}
-.mycard_front {
-    flex-grow: 0.5;
-}
-
 .action {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     border-top: 1px dotted rgba(255, 255, 255, 0.5);
     margin-top: $ratio_d1;
     padding-top: $ratio_bigger;
@@ -109,6 +101,7 @@
         text-decoration: none;
     }
     &_wrap {
+        
     }
     &_list {
         row-gap: $ratio_regular;

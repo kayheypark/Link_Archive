@@ -821,6 +821,7 @@ body {
 }
 
 .form_wrap {
+  column-gap: 3rem;
   flex: 0 0 100%;
 }
 
@@ -849,19 +850,10 @@ body {
   color: #80beff;
 }
 
-.mycard {
-  display: flex;
-  justify-content: stretch;
-  column-gap: 1.15rem;
-}
-
-.mycard_front {
-  flex-grow: 0.5;
-}
-
 .action {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   border-top: 1px dotted rgba(255, 255, 255, 0.5);
   margin-top: 3rem;
   padding-top: 1.5rem;

@@ -5,33 +5,29 @@
 </section>
 <form action="" method="POST" name="FrmMyCard" id="FrmMyCard">
     <section class="sec">
-        <div class="mycard">
-            <div class="mycard_front">
-                <fieldset class="form_fieldset">
-                    <legend class="form_legend">Links</legend>
-                    <div class="form_wrap">
-                        <label for="Instagram">Instagram</label>
-                        <input type="url" name="Instagram" id="Instagram" value="" placeholder="Jot Down Please" class="form_control" />
-                    </div>
-                    <div class="form_wrap">
-                        <label for="Twitter">Twitter</label>
-                        <input type="url" name="Twitter" id="Twitter" value="" placeholder="Jot Down Please" class="form_control" />
-                    </div>
-                    <div class="form_wrap">
-                        <label for="Facebook">Facebook</label>
-                        <input type="url" name="Facebook" id="Facebook" value="" placeholder="Jot Down Please" class="form_control" />
-                    </div>
-                    <div class="form_wrap">
-                        <label for="Blog">Blog</label>
-                        <input type="url" name="Blog" id="Blog" value="" placeholder="Jot Down Please" class="form_control" />
-                    </div>
-                    <div class="form_wrap">
-                        <label for="Website">Website</label>
-                        <input type="url" name="Website" id="Website" value="" placeholder="Jot Down Please" class="form_control" />
-                    </div>
-                </fieldset>
+        <fieldset class="form_fieldset">
+            <legend class="form_legend">Links</legend>
+            <div class="form_wrap">
+                <label for="Instagram">Instagram</label>
+                <input type="url" name="Instagram" id="Instagram" value="" placeholder="Jot Down Please" class="form_control" />
             </div>
-        </div>
+            <div class="form_wrap">
+                <label for="Twitter">Twitter</label>
+                <input type="url" name="Twitter" id="Twitter" value="" placeholder="Jot Down Please" class="form_control" />
+            </div>
+            <div class="form_wrap">
+                <label for="Facebook">Facebook</label>
+                <input type="url" name="Facebook" id="Facebook" value="" placeholder="Jot Down Please" class="form_control" />
+            </div>
+            <div class="form_wrap">
+                <label for="Blog">Blog</label>
+                <input type="url" name="Blog" id="Blog" value="" placeholder="Jot Down Please" class="form_control" />
+            </div>
+            <div class="form_wrap">
+                <label for="Website">Website</label>
+                <input type="url" name="Website" id="Website" value="" placeholder="Jot Down Please" class="form_control" />
+            </div>
+        </fieldset>
         <div class="action">
             <em class="screen_out">Action Area</em>
             <button type="button" onclick="fnBack();" class="button"><i class="ri-close-line"></i>cancel</button>
