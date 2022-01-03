@@ -24,7 +24,7 @@
     </div>
     <div class="action">
         <em class="screen_out">Action Area</em>
-        <a href="/View/CardEdit.php" class="button"><i class="ri-save-line"></i>edit</a>
+        <a href="/view/cardedit.php" class="button"><i class="ri-save-line"></i>edit</a>
     </div>
 </section>
 <?php include("./shared/layout/tail.php") ?>
