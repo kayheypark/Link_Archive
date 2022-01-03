@@ -39,7 +39,7 @@
   max-width: 1200px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: unset;
   }
@@ -541,6 +541,18 @@ html {
   color: #333333;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   font-size: 1rem;
 }
@@ -602,13 +614,13 @@ ul, ol, dl {
                             헬퍼
 
 --------------------------------------------------*/
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 500px) {
   .d_none_mob {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .d_none_tab {
     display: none !important;
   }
@@ -687,12 +699,24 @@ body {
   color: #F5EEFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+}
+
 .header_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
   padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .header_top {
+    padding: 1.5rem;
+  }
 }
 
 .header_skyinfo_wrap {
@@ -707,11 +731,24 @@ body {
   width: 300px;
 }
 
+@media only screen and (max-width: 768px) {
+  .header_search_wrap input {
+    width: 200px;
+  }
+}
+
 .middle_area {
   display: flex;
   justify-content: stretch;
   margin: 3rem;
   column-gap: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .middle_area {
+    margin: 1.5rem;
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -740,6 +777,13 @@ body {
   color: #5cff69;
 }
 
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    margin-bottom: 3rem;
+    flex-basis: unset;
+  }
+}
+
 .main {
   flex-grow: 12;
 }
@@ -754,6 +798,7 @@ body {
 
 .footer_top {
   column-gap: 5rem;
+  row-gap: 1.5rem;
 }
 
 .footer_info {

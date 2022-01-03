@@ -10,6 +10,12 @@ body {
 }
 
 .header {
+
+    .logo {
+        @include rwd(tablet) {
+            font-size: $ratio_bigger;
+        }
+    }
     
     &_top {
         display: flex;
@@ -17,6 +23,9 @@ body {
         align-items: center;
         padding: $ratio_d1;
         padding-bottom: 0;
+        @include rwd(tablet) {
+            padding: $ratio_bigger;
+        }
     }
     &_skyinfo_wrap {
         @extend %f_j_sb;
@@ -29,6 +38,9 @@ body {
         column-gap: 12px;
         input {
             width: 300px;
+            @include rwd(tablet) {
+                width: 200px;
+            }
         }
     }
 }
@@ -39,6 +51,10 @@ body {
     justify-content: stretch;
     margin: $ratio_d1;
     column-gap: $ratio_d1;
+    @include rwd(tablet) {
+        margin: $ratio_bigger;
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -72,6 +88,11 @@ body {
             }
         }
     }
+
+    @include rwd(tablet) {
+        margin-bottom: $ratio_d1;
+        flex-basis: unset;
+    }
 }
 
 .main {
@@ -85,6 +106,7 @@ body {
     &_top {
         @extend %f;
         column-gap: $ratio_d2;
+        row-gap: $ratio_bigger;
     }
     &_info {
         @include flex_column($ratio_regular);

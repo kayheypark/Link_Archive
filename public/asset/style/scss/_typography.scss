@@ -48,6 +48,12 @@ html {
     font-size: 20px;
     font-weight: 300;
     color: $black;
+    @include rwd(tablet) {
+        font-size: 18px;
+    };
+    @include rwd(mobile) {
+        font-size: 14px;
+    };
 }
 
 body {
