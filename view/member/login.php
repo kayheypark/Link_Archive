@@ -5,7 +5,7 @@
 </section>
 <section class="sec">
 
-    <form action="/Api/Login.php" method="POST" name="" id="" >
+    <form action="/Api/login.php" method="POST" name="" id="" >
         <fieldset class="form_fieldset">
             <legend class="form_legend">Login for Enjoy !</legend>
             <div class="form_wrap">
@@ -22,7 +22,7 @@
             <em class="screen_out">Action Area</em>
             <button type="button" onclick="fnBack();" class="button"><i class="ri-arrow-left-line"></i>Prev</button>
             <a href="/view/member/FindAccount.php">Are you forgot your account?</a>
-            <a href="/view/member/Regist.php">Don't have account yet?</a>
+            <a href="/view/member/regist.php">Don't have account yet?</a>
             <button type="submit" class="button"><i class="ri-login-circle-line"></i>Login</button>
         </div>
     </form>

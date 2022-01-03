@@ -15,8 +15,8 @@
                 </form>
             </div>
             <div class="header_skyinfo_wrap">
-                <a href="/view/member/Login.php" class="button">Login</a>
-                <a href="/view/member/Regist.php" class="button primary">Sign Up Free</a>
+                <a href="/view/member/login.php" class="button">Login</a>
+                <a href="/view/member/regist.php" class="button primary">Sign Up Free</a>
 
                 <!-- <img src="//placehold.it/50x50" alt="프로필 사진" class="profile_img" />
                 <p class="m_0">행복한어쩔티비</p> -->
