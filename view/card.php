@@ -1,7 +1,7 @@
 ﻿<?php include("./shared/layout/head.sub.php") ?>
 <?php include("./shared/layout/head.php") ?>
 <section class="sec title">
-    <h2>My Card</h2>
+    <h2>Card</h2>
 </section>
 <section class="sec">
     <div class="card_live_wrap">
