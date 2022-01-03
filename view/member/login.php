@@ -21,8 +21,8 @@
         <div class="action">
             <em class="screen_out">Action Area</em>
             <button type="button" onclick="fnBack();" class="button"><i class="ri-arrow-left-line"></i>Prev</button>
-            <a href="/view/Member/FindAccount.php">Are you forgot your account?</a>
-            <a href="/view/Member/Regist.php">Don't have account yet?</a>
+            <a href="/view/member/FindAccount.php">Are you forgot your account?</a>
+            <a href="/view/member/Regist.php">Don't have account yet?</a>
             <button type="submit" class="button"><i class="ri-login-circle-line"></i>Login</button>
         </div>
     </form>
