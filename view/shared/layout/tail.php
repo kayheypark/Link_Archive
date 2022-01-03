@@ -10,9 +10,8 @@
                 </ul>
             </div>
             <div class="footer_info">
-                <p class="footer_info_title">Privacy</p>
+                <p class="footer_info_title">Policy</p>
                 <ul class="footer_info_list">
-                    
                     <li><a href="/Policy/Privacy">Privacy</a></li>
                     <li><a href="/Policy/TermsOfUse">Terms Of Use</a></li>
                 </ul>

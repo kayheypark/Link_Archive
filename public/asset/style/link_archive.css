@@ -820,9 +820,26 @@ body {
   margin: 0;
 }
 
+.form_fieldset + .form_fieldset {
+  margin-top: 3rem;
+}
+
 .form_wrap {
   column-gap: 3rem;
   flex: 0 0 100%;
+}
+
+.form_wrap label {
+  display: flex;
+  align-items: center;
+}
+
+.form_wrap label img {
+  margin-right: 0.6rem;
+}
+
+.form_wrap.with_textarea textarea {
+  width: 100%;
 }
 
 .form_legend {

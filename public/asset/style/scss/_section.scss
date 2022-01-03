@@ -48,6 +48,9 @@
     border: 0;
     padding: 0;
     margin: 0;
+    &+& {
+        margin-top: $ratio_d1;
+    }
 }
 
 //폼랩
@@ -56,6 +59,21 @@
     @extend %f_j_sb;
     column-gap: $ratio_d1;
     flex: 0 0 100%;
+
+    label {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: $ratio_smaller;
+        }
+    }
+
+    &.with_textarea {
+        textarea {
+            width: 100%;
+        }
+    }
 }
 
 //폼레전드
